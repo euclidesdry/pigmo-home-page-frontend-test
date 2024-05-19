@@ -1,6 +1,14 @@
 import starIcon from "~/assets/icons/star.svg";
 import airdropIcon from "~/assets/icons/airdrop.svg";
 
+import logoIcon from "~/assets/icons/pigmo.svg";
+import slotMachineIcon from "~/assets/icons/slot-machine.svg";
+import casinoIcon from "~/assets/icons/casino.svg";
+import giftIcon from "~/assets/icons/gift.svg";
+import tableGamesIcon from "~/assets/icons/table-games.svg";
+import rouletteIcon from "~/assets/icons/roulette.svg";
+import blackjackIcon from "~/assets/icons/blackjack.svg";
+
 export const items = [
   { name: "$PIG Airdrop", icon: airdropIcon },
   { name: "NFT Staking", icon: starIcon },
@@ -10,13 +18,13 @@ export const sections = [
   {
     sectionTitle: "CASSINO",
     items: [
-      { title: "Originais", icon: "Content for CASSINO item 1" },
-      { title: "Caça-Níqueis", icon: "Content for CASSINO item 2" },
-      { title: "Cassino Ao Vivo", icon: "Content for CASSINO item 3" },
-      { title: "Lançamentos", icon: "Content for CASSINO item 4" },
-      { title: "Jogos de Mesa", icon: "Content for CASSINO item 5" },
-      { title: "Roleta", icon: "Content for CASSINO item 6" },
-      { title: "Blackjack", icon: "Content for CASSINO item 7" },
+      { title: "Originais", icon: logoIcon },
+      { title: "Caça-Níqueis", icon: slotMachineIcon },
+      { title: "Cassino Ao Vivo", icon: casinoIcon },
+      { title: "Lançamentos", icon: giftIcon },
+      { title: "Jogos de Mesa", icon: tableGamesIcon },
+      { title: "Roleta", icon: rouletteIcon },
+      { title: "Blackjack", icon: blackjackIcon },
     ],
   },
   {
@@ -26,12 +34,12 @@ export const sections = [
   {
     sectionTitle: "SPORTS",
     items: [
-      { title: "Tênis de Mesa", icon: "Content for SPORTS item 1" },
-      { title: "Voleibol", icon: "Content for SPORTS item 2" },
-      { title: "Boxe", icon: "Content for SPORTS item 3" },
-      { title: "Golfe", icon: "Content for SPORTS item 4" },
-      { title: "MMA", icon: "Content for SPORTS item 5" },
-      { title: "Sinuca", icon: "Content for SPORTS item 6" },
+      { title: "Tênis de Mesa" },
+      { title: "Voleibol" },
+      { title: "Boxe" },
+      { title: "Golfe" },
+      { title: "MMA" },
+      { title: "Sinuca" },
     ],
   },
 ];

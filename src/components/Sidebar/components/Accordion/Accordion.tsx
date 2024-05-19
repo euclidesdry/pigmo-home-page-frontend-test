@@ -2,73 +2,32 @@
 
 import { useState } from "react";
 import { css } from "../../../../../styled-system/css";
-import AccordionItem, { AccordionItemProps } from "./components/AccordionItem";
 
-interface AccordionSectionProps {
-  sectionTitle: string;
-  items: AccordionItemProps[];
-}
+import AccordionSection, {
+  AccordionSectionProps,
+} from "./components/AccordionSection";
 
-const AccordionSection: React.FC<AccordionSectionProps> = ({
-  sectionTitle,
-  items,
-}) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleOpen = () => setIsOpen(!isOpen);
-
-  return (
-    <div className={sectionStyle}>
-      <button onClick={toggleOpen} className={sectionButtonStyle}>
-        {sectionTitle}
-      </button>
-      {isOpen && (
-        <div className={accordionStyle}>
-          {items.map((item, index) => (
-            <AccordionItem key={index} {...item} />
-          ))}
-        </div>
-      )}
-    </div>
-  );
-};
+export const accordionStyle = css({
+  width: "100%",
+});
 
 interface AccordionProps {
-  sections: AccordionSectionProps[];
+  sections: Pick<AccordionSectionProps, "sectionTitle" | "items">[];
 }
 
 export default function Accordion({ sections }: AccordionProps) {
+  const [opened, setOpened] = useState(sections[0].sectionTitle);
+
   return (
     <div className={accordionStyle}>
       {sections.map((section, index) => (
-        <AccordionSection key={index} {...section} />
+        <AccordionSection
+          key={index}
+          {...section}
+          openedSection={opened}
+          setOpenedSection={setOpened}
+        />
       ))}
     </div>
   );
 }
-
-// Styles
-const accordionStyle = css({
-  width: "100%",
-  maxWidth: "600px",
-  margin: "0 auto",
-});
-
-const sectionStyle = css({
-  marginBottom: "1rem",
-});
-
-const sectionButtonStyle = css({
-  width: "100%",
-  py: "2",
-  px: "6",
-  textAlign: "left",
-  border: "none",
-  outline: "none",
-  cursor: "pointer",
-  transition: "background-color 0.3s",
-
-  "&:hover": {
-    backgroundColor: "elevation-2",
-  },
-});
