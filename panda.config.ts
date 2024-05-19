@@ -18,11 +18,14 @@ export default defineConfig({
     extend: {
       tokens: {
         colors: {
-          primary: { value: "#ff007a" },
+          primary: { value: "#E90083" },
           secondary: { value: "#FF6864" },
           accent: { value: "#e2e8f0" },
+          success: { value: "#24D861" },
+          error: { value: "#DE3449" },
           "pigmo-primary": { value: "#E90083" },
           "high-contrast": { value: "#E6E3E8" },
+          "low-contrast": { value: "#826B8E" },
           "elevation-1": { value: "#170D19" },
           "elevation-2": { value: "#251929" },
           "elevation-3": { value: "#35243D" },
