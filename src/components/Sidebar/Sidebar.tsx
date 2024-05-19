@@ -33,8 +33,10 @@ const sections = [
 export default function Sidebar() {
   return (
     <styled.aside
-      w="240px"
+      minW="240px"
       className={css({
+        display: "flex",
+        flexDirection: "column",
         borderRight: "1px solid",
         borderRightColor: "elevation-3",
       })}
