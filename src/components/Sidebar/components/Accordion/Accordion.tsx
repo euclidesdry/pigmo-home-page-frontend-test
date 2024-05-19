@@ -1,27 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { css } from "../../../../styled-system/css";
-
-interface AccordionItemProps {
-  title: string;
-  content: string;
-}
-
-const AccordionItem: React.FC<AccordionItemProps> = ({ title, content }) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleOpen = () => setIsOpen(!isOpen);
-
-  return (
-    <div className={itemStyle}>
-      <button onClick={toggleOpen} className={buttonStyle}>
-        {title}
-      </button>
-      {isOpen && <div className={contentStyle}>{content}</div>}
-    </div>
-  );
-};
+import { css } from "../../../../../styled-system/css";
+import AccordionItem, { AccordionItemProps } from "./components/AccordionItem";
 
 interface AccordionSectionProps {
   sectionTitle: string;
@@ -56,7 +37,7 @@ interface AccordionProps {
   sections: AccordionSectionProps[];
 }
 
-const Accordion: React.FC<AccordionProps> = ({ sections }) => {
+export default function Accordion({ sections }: AccordionProps) {
   return (
     <div className={accordionStyle}>
       {sections.map((section, index) => (
@@ -64,9 +45,7 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
       ))}
     </div>
   );
-};
-
-export default Accordion;
+}
 
 // Styles
 const accordionStyle = css({
@@ -81,41 +60,15 @@ const sectionStyle = css({
 
 const sectionButtonStyle = css({
   width: "100%",
-  padding: "1rem",
+  py: "2",
+  px: "6",
   textAlign: "left",
-  backgroundColor: "#ddd",
   border: "none",
   outline: "none",
   cursor: "pointer",
-  fontSize: "1.5rem",
   transition: "background-color 0.3s",
 
   "&:hover": {
-    backgroundColor: "#ccc",
+    backgroundColor: "elevation-2",
   },
-});
-
-const itemStyle = css({
-  borderBottom: "1px solid #eaeaea",
-});
-
-const buttonStyle = css({
-  width: "100%",
-  padding: "1rem",
-  textAlign: "left",
-  backgroundColor: "#f9f9f9",
-  border: "none",
-  outline: "none",
-  cursor: "pointer",
-  fontSize: "1.25rem",
-  transition: "background-color 0.3s",
-
-  "&:hover": {
-    backgroundColor: "#eaeaea",
-  },
-});
-
-const contentStyle = css({
-  padding: "1rem",
-  backgroundColor: "#fff",
 });
