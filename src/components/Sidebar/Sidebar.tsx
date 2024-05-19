@@ -50,8 +50,17 @@ export default function Sidebar() {
         borderRightColor: "elevation-3",
       })}
     >
-      <TopBar />
-      <Logged items={items} />
+      <styled.div
+        className={css({
+          backgroundImage: "url(/assets/images/bg/sidebar-top-gradient.png)",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "top center",
+          backgroundSize: "cover",
+        })}
+      >
+        <TopBar />
+        <Logged items={items} />
+      </styled.div>
       <Accordion sections={sections} />
     </styled.aside>
   );
