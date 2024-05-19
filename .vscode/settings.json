@@ -1,4 +1,4 @@
 {
   "cSpell.words": ["pigmo", "Pigmo"],
-  "conventionalCommits.scopes": ["component"]
+  "conventionalCommits.scopes": ["component", "ci", "assets"]
 }
