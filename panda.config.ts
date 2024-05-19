@@ -29,6 +29,7 @@ export default defineConfig({
           "elevation-1": { value: "#170D19" },
           "elevation-2": { value: "#251929" },
           "elevation-3": { value: "#35243D" },
+          "elevation-4": { value: "#4B3456" },
         },
         spacing: {
           sidebarY: { value: "16px" },

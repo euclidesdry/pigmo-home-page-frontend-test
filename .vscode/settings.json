@@ -1,4 +1,4 @@
 {
-  "cSpell.words": ["pigmo", "Pigmo"],
-  "conventionalCommits.scopes": ["component", "ci", "assets"]
+  "cSpell.words": ["pandacss", "pigmo", "Pigmo"],
+  "conventionalCommits.scopes": ["components", "ci", "assets"]
 }

@@ -2,7 +2,16 @@ import { css } from "../../../styled-system/css";
 import { styled } from "../../../styled-system/jsx";
 
 import Accordion from "./components/Accordion";
+import Logged from "./components/Logged";
 import TopBar from "./components/TopBar";
+
+import starIcon from "~/assets/icons/star.svg";
+import airdropIcon from "~/assets/icons/airdrop.svg";
+
+const items = [
+  { name: "$PIG Airdrop", icon: airdropIcon },
+  { name: "NFT Staking", icon: starIcon },
+];
 
 const sections = [
   {
@@ -42,6 +51,7 @@ export default function Sidebar() {
       })}
     >
       <TopBar />
+      <Logged items={items} />
       <Accordion sections={sections} />
     </styled.aside>
   );
