@@ -31,11 +31,11 @@ export default function AccordionItem({ title, icon }: AccordionItemProps) {
 
           "&:before": {
             content: '""',
-            width: "20%",
+            width: "30%",
             height: "90%",
             display: "block",
             position: "absolute",
-            backgroundColor: "elevation-4",
+            backgroundColor: "elevation-3",
             rounded: "lg",
             opacity: "0",
             left: "5%",

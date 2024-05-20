@@ -2,9 +2,10 @@ import { styled } from "../../../styled-system/jsx";
 
 export const SidebarWrapper = styled("aside", {
   base: {
+    display: "flex",
+    position: "relative",
     minWidth: "240px",
     maxWidth: "240px",
-    display: "flex",
     flexDirection: "column",
     borderRight: "1px solid",
     borderRightColor: "elevation-3",

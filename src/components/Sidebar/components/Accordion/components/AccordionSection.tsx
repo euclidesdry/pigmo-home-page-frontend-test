@@ -12,6 +12,23 @@ import arrowIcon from "~/assets/icons/arrow.svg";
 
 const sectionStyle = css({});
 
+const ArrowIcon = styled(Image, {
+  base: {
+    transition: "all 0.3s easy",
+  },
+  variants: {
+    type: {
+      active: {
+        transform: "rotate(180deg)",
+      },
+      inative: { transform: "rotate(0deg)" },
+    },
+  },
+  defaultVariants: {
+    type: "inative",
+  },
+});
+
 const sectionButtonStyles = cva({
   base: {
     width: "100%",
@@ -83,7 +100,11 @@ export default function AccordionSection({
         <styled.span fontSize="sm" fontWeight="bold">
           {sectionTitle}
         </styled.span>
-        <Image src={arrowIcon} alt={`${sectionTitle} Icon`} />
+        <ArrowIcon
+          src={arrowIcon}
+          alt={`${sectionTitle} Icon`}
+          type={isOpen ? "active" : "inative"}
+        />
       </styled.button>
       {isOpen && (
         <div className={accordionStyle}>

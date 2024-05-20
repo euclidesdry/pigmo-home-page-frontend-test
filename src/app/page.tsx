@@ -8,12 +8,12 @@ import Header from "~/components/Header";
 import Footer from "~/components/Footer";
 import Layout from "~/components/Layout";
 import Sidebar from "~/components/Sidebar";
-import MainContent from "~/components/MainContent";
+import MainContent from "~/components/Main";
 
 export default function Home() {
   return (
     <Layout>
-      <div></div>
+      <div>Content</div>
     </Layout>
   );
 }

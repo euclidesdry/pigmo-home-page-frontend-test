@@ -1,4 +1,5 @@
 import Accordion from "./components/Accordion";
+import BottomSection from "./components/BottomSection";
 import Logged from "./components/Logged";
 import TopBar from "./components/TopBar";
 
@@ -13,7 +14,10 @@ export default function Sidebar() {
         <TopBar />
         <Logged items={items} />
       </TopBackground>
+
       <Accordion sections={sections} />
+
+      <BottomSection />
     </SidebarWrapper>
   );
 }
