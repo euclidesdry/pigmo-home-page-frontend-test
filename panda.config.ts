@@ -31,6 +31,17 @@ export default defineConfig({
           "elevation-3": { value: "#35243D" },
           "elevation-4": { value: "#4B3456" },
         },
+
+        gradients: {
+          button: {
+            value: {
+              type: "radial",
+              placement: "52.11% 100% at 52.11% 0%",
+              stops: ["#FF6864 0%", "#E90083 100%"],
+            },
+            description: "Main Button gradient, only used for buttons",
+          },
+        },
         spacing: {
           sidebarY: { value: "16px" },
           sidebarX: { value: "32px" },

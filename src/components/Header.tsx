@@ -1,9 +1,11 @@
 import Image from "next/image";
 
 import { css } from "../../styled-system/css";
-import { Box, Flex, styled } from "../../styled-system/jsx";
+import { Box, Flex } from "../../styled-system/jsx";
 
-import hamburgerMenuBackIcon from "~/assets/icons/hamburguer-menu-back.svg";
+import Button from "./Button";
+
+import hamburgerMenuBackIcon from "~/assets/icons/hamburger-menu-back.svg";
 import pigmoLogo from "~/assets/image/logo-header.svg";
 
 export default function Header() {
@@ -25,8 +27,8 @@ export default function Header() {
         </Box>
         <Box>
           <Flex align="center" gap="3">
-            <button>Login</button>
-            <button>Register</button>
+            <Button>Login</Button>
+            <Button variant="filled">Register</Button>
           </Flex>
         </Box>
       </Flex>

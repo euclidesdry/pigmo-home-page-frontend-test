@@ -11,7 +11,7 @@ interface LayoutProps {
 
 export default function Layout({ children }: LayoutProps) {
   return (
-    <Flex direction="row" minHeight="100vh" bg="elevation-1" color="white">
+    <Flex direction="row" maxHeight="100%" bg="elevation-1" color="white">
       <Sidebar />
       <Main>{children}</Main>
     </Flex>

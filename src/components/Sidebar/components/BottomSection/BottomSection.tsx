@@ -14,7 +14,7 @@ export default function BottomSection() {
         flexGrow: 1,
         px: "6",
         pt: "20",
-        pb: "24",
+        pb: "16",
         backgroundImage: "url(/assets/images/bg/sidebar-bottom-gradient.png)",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center -300px",
