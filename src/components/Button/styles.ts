@@ -37,8 +37,8 @@ export const ButtonStyles = styled("button", {
       outlined: {
         bg: "transparent",
         border: "1px solid",
-        borderColor: "indigo.500",
-        color: "indigo.500",
+        borderColor: "low-contrast",
+        color: "low-contrast",
       },
     },
   },

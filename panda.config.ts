@@ -23,6 +23,11 @@ export default defineConfig({
   theme: {
     extend: {
       tokens: {
+        fontSizes: {
+          h1: { value: "var(--font-sizes-5xl)" },
+          hero: { value: "var(--font-sizes-xl)" },
+        },
+
         colors: {
           primary: { value: "#E90083" },
           secondary: { value: "#FF6864" },
