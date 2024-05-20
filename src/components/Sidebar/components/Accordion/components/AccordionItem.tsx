@@ -51,14 +51,23 @@ export default function AccordionItem({ title, icon }: AccordionItemProps) {
               width: "90%",
               opacity: "1",
             },
-            "& > img": {
+            "& > span > img": {
               filter:
                 "invert(13%) sepia(99%) saturate(6990%) hue-rotate(319deg) brightness(93%) contrast(101%)",
             },
           },
         })}
       >
-        {icon && <Image src={icon} alt={title} />}
+        {icon && (
+          <styled.span
+            minW="5"
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+          >
+            <Image src={icon} alt={title} style={{ objectFit: "contain" }} />
+          </styled.span>
+        )}
         <styled.span zIndex={4}>{title}</styled.span>
       </button>
     </div>

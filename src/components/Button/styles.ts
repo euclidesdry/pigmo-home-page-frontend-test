@@ -26,14 +26,12 @@ export const ButtonStyles = styled("button", {
     variant: {
       filled: {
         background: "primary",
-        backgroundImage:
-          "radial-gradient(52.11% 100% at 52.11% 0%, token(colors.secondary) 0%, token(colors.primary) 100%)",
+        backgroundImage: "token(gradients.button)",
         borderColor: "secondary",
         boxShadow:
           "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset",
         _active: {
-          boxShadow:
-            "rgba(0, 0, 0, 0) 0px 2px 4px, rgba(0, 0, 0, 0) 0px 7px 13px -3px, rgba(0, 0, 0, 0) 0px -3px 0px inset",
+          boxShadow: "token(colors.primary/200) 0 3px 7px inset",
         },
       },
       outlined: {

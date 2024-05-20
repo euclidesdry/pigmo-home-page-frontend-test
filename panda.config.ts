@@ -13,6 +13,12 @@ export default defineConfig({
   // Files to exclude
   exclude: [],
 
+  // Global vars
+  globalVars: {
+    "--mouse-position-x": "50%",
+    "--mouse-position-y": "50%",
+  },
+
   // Useful for theme customization
   theme: {
     extend: {
@@ -23,6 +29,12 @@ export default defineConfig({
           accent: { value: "#e2e8f0" },
           success: { value: "#24D861" },
           error: { value: "#DE3449" },
+          "discord-1": { value: "#E90083" },
+          "discord-2": { value: "#FF6864" },
+          "telegram-1": { value: "#34BDC6" },
+          "telegram-2": { value: "#299CDC" },
+          "x-1": { value: "#0D0B0C" },
+          "x-2": { value: "#1C1717" },
           "pigmo-primary": { value: "#E90083" },
           "high-contrast": { value: "#E6E3E8" },
           "low-contrast": { value: "#826B8E" },
@@ -40,6 +52,9 @@ export default defineConfig({
               stops: ["#FF6864 0%", "#E90083 100%"],
             },
             description: "Main Button gradient, only used for buttons",
+          },
+          footer: {
+            value: "linear-gradient(270deg, #120B14 0%, #1E1221 100%)",
           },
         },
         spacing: {
