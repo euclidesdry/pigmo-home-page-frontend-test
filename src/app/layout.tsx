@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 
 import "./globals.css";
+import { NextFontWithVariable } from "next/dist/compiled/@next/font";
 
-export const AgletSans = localFont({
+const agletSans: NextFontWithVariable = localFont({
   src: [
     {
       path: "../assets/fonts/Aglet_Sans/Aglet_Sans.otf",
@@ -41,7 +42,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={`${AgletSans.className}`}>
+    <html lang="pt-BR" className={agletSans.className}>
       <body suppressHydrationWarning={true}>{children}</body>
     </html>
   );

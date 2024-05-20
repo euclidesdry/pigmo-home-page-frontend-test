@@ -4,7 +4,7 @@ import { Box, Flex } from "../../styled-system/jsx";
 
 export default function GamesSection() {
   return (
-    <Box as="section" p="8">
+    <Box p="8">
       <Flex wrap="wrap" gap="4">
         <Box bg="gray" p="4">
           Originals

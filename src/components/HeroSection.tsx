@@ -1,14 +1,13 @@
 // components/HeroSection.tsx
 import React from "react";
-import { Box, Flex, Heading, Button } from "../../styled-system/jsx";
+import { Box, Flex, styled } from "../../styled-system/jsx";
+import Button from "./Button";
 
 export default function HeroSection() {
   return (
-    <Box as="section" bg="pink" p="8">
-      <Heading as="h1" size="xl">
-        Boas vindas ao Pigmo!
-      </Heading>
-      <Button>Quero me registrar</Button>
+    <Box bg="pink" p="8">
+      <styled.p fontSize="xl">Boas vindas ao Pigmo!</styled.p>
+      <Button variant="filled">Quero me registrar</Button>
     </Box>
   );
 }
