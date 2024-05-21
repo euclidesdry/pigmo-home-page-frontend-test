@@ -27,10 +27,10 @@ const priceChangeStyles = cva({
 });
 
 type PriceChange = PropsWithChildren & {
-  type: "up" | "down";
+  type?: "up" | "down";
 };
 
-export default function PriceChange({ children, type }: PriceChange) {
+export default function PriceChange({ children, type = "up" }: PriceChange) {
   return (
     <styled.span className={priceChangeStyles({ type })}>
       {type === "up" ? <Up pe="1" /> : <Down pe="1" />}

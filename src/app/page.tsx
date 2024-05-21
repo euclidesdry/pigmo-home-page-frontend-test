@@ -1,7 +1,7 @@
 import CasinoSection from "~/components/CasinoSection";
 import { Box, Container } from "../../styled-system/jsx";
 
-import CriptoCoinsSection from "~/components/CriptoCoinsSection";
+import CriptoCoinsSection from "~/components/CryptoCoinsSection";
 import HeroSection from "~/components/HeroSection";
 import Layout from "~/components/Layout";
 import SportsSection from "~/components/SportsSection";

@@ -13,6 +13,8 @@ export default function Header() {
     <Box
       px="8"
       py="4"
+      maxH="72px"
+      h="72px"
       className={css({
         borderBottom: "1px solid",
         borderColor: "elevation-3",

@@ -1,7 +1,7 @@
 import Image, { ImageProps } from "next/image";
 import { PropsWithChildren } from "react";
 import { Box, Flex, FlexProps, styled } from "../../../styled-system/jsx";
-import { ScrollButton } from "../CriptoCoinsSection/styles";
+import { ScrollButton } from "../CryptoCoinsSection/styles";
 
 type ActionBarProps = PropsWithChildren<{}>;
 
