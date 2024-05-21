@@ -15,7 +15,7 @@ export default function CryptoCoinsSection({}: CryptoCoinsSectionProps) {
         <ActionBar.Icon src="/assets/icons/spades.svg" alt="CriptoCoin Icon" />
         <ActionBar.Title>CriptoMoedas</ActionBar.Title>
 
-        <Flex alignItems="center">
+        <Flex alignItems="center" ml="10">
           <Volume>
             Total 24H Volume: <styled.span color="success">$2.27B</styled.span>
           </Volume>

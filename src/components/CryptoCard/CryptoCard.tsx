@@ -14,8 +14,8 @@ export default function CryptoCard({ children }: CryptoCardProps) {
       direction="column"
       gap="3"
       className={css({
-        width: "177px",
-        maxW: "177px",
+        width: "178px",
+        maxW: "178px",
         rounded: "lg",
         border: "1px solid token(colors.elevation-3)",
         cursor: "pointer",

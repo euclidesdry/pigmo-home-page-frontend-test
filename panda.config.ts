@@ -71,6 +71,37 @@ export default defineConfig({
           sidebarY: { value: "16px" },
           sidebarX: { value: "32px" },
         },
+
+        assets: {
+          "casino-bg-0": {
+            type: "url",
+            value: "/assets/images/bg/casino/Images-0.svg",
+          },
+          "casino-bg-1": {
+            type: "url",
+            value: "/assets/images/bg/casino/Images-1.svg",
+          },
+          "casino-bg-2": {
+            type: "url",
+            value: "/assets/images/bg/casino/Images-2.svg",
+          },
+          "casino-bg-3": {
+            type: "url",
+            value: "/assets/images/bg/casino/Images-3.svg",
+          },
+          "casino-bg-4": {
+            type: "url",
+            value: "/assets/images/bg/casino/Images-4.svg",
+          },
+          "casino-bg-5": {
+            type: "url",
+            value: "/assets/images/bg/casino/Images-5.svg",
+          },
+          "casino-bg-6": {
+            type: "url",
+            value: "/assets/images/bg/casino/Images-6.svg",
+          },
+        },
       },
     },
   },
