@@ -6,6 +6,12 @@ import { Box, Container, Flex, styled } from "../../styled-system/jsx";
 
 import Button from "./Button";
 
+import pigmoLogo from "~/assets/icons/google.svg";
+import foxLogo from "~/assets/icons/fox.svg";
+import sLogo from "~/assets/icons/s.svg";
+
+import Image from "next/image";
+
 export default function HeroSection() {
   return (
     <Box
@@ -46,9 +52,15 @@ export default function HeroSection() {
 
             <Flex gap="2">
               <Button variant="filled">Quero me registrar</Button>
-              <Button variant="outlined">G</Button>
-              <Button variant="outlined">F</Button>
-              <Button variant="outlined">S</Button>
+              <Button variant="outlined">
+                <Image src={pigmoLogo} alt="Google Logo" />
+              </Button>
+              <Button variant="outlined">
+                <Image src={foxLogo} alt="Fox Logo" />
+              </Button>
+              <Button variant="outlined">
+                <Image src={sLogo} alt="S Logo" />
+              </Button>
             </Flex>
           </Flex>
         </Container>

@@ -10,7 +10,11 @@ import { List } from "./components/List";
 
 export default function Footer() {
   return (
-    <styled.footer borderTop="1px solid token(colors.elevation-3)" pt="9">
+    <styled.footer
+      borderTop="1px solid token(colors.elevation-3)"
+      pt="9"
+      mt="8"
+    >
       <Container maxWidth="7xl" pb="8">
         <Box mb="12">
           <Flex justify="space-between" align="center" gap="12">

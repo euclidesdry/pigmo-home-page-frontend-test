@@ -12,7 +12,7 @@ export const ButtonStyles = styled("button", {
     transition: "all 0.3s ease",
     rounded: "lg",
     padding: "4",
-    paddingY: "3",
+    paddingY: "2",
 
     fontSize: "sm",
     fontWeight: "bold",
@@ -39,6 +39,8 @@ export const ButtonStyles = styled("button", {
         border: "1px solid",
         borderColor: "low-contrast",
         color: "low-contrast",
+        paddingX: "3",
+        minH: "44px",
       },
     },
   },

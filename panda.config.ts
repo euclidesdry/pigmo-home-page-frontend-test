@@ -25,6 +25,11 @@ export default defineConfig({
       tokens: {
         fontSizes: {
           h1: { value: "var(--font-sizes-5xl)" },
+          h2: { value: "var(--font-sizes-3xl)" },
+          h3: { value: "var(--font-sizes-2xl)" },
+          h4: { value: "var(--font-sizes-xl)" },
+          h5: { value: "var(--font-sizes-lg)" },
+          h6: { value: "var(--font-sizes-md)" },
           hero: { value: "var(--font-sizes-xl)" },
         },
 
